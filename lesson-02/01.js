@@ -28,3 +28,9 @@ if (isAdmin === false && isVerifiedUser === false) {
     isAccess = false;
   }
 }
+
+if (isVerifiedUser === true) {
+    if (hasSpecialPermission === false && hasTemporaryPass === false) {
+      isAccess = false;
+    }
+  }
