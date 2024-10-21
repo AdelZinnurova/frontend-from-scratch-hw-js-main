@@ -23,8 +23,8 @@ if (isAdmin === true || isVerifiedUser === true) {
   }
 }
 
-if (isAdmin === false || isVerifiedUser === false) {
-  if (hasSpecialPermission === false || hasTemporaryPass === false) {
+if (isAdmin === false && isVerifiedUser === false) {
+  if (hasSpecialPermission === false && hasTemporaryPass === false) {
     isAccess = false;
   }
 }
