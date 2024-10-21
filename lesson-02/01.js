@@ -19,6 +19,5 @@ let isAccess = true;
 
 if (isAdmin === true || isVerifiedUser === true) {
   if (hasSpecialPermission === true || hasTemporaryPass === true) {
-    alert("Пользователь может получить доступ");
   }
 }
