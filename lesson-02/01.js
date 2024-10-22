@@ -30,7 +30,7 @@ if (isAdmin === false && isVerifiedUser === false) {
 }
 
 if (isVerifiedUser === true) {
-    if (hasSpecialPermission === false && hasTemporaryPass === false) {
-      isAccess = false;
-    }
+  if (hasSpecialPermission === false && hasTemporaryPass === false) {
+    isAccess = false;
   }
+}
