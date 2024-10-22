@@ -9,28 +9,12 @@
 
 let dice1 = Math.floor(Math.random() * 6) + 1; //от 1 до 6
 let dice2 = Math.floor(Math.random() * 6) + 1; //от 1 до 6
-let isWinningDouble = true;
+let isWinningDouble = (dice1 === dice2) && (dice1 > 3); // Проверяем, что выпал дубль и число больше 3
 
-console.log("Первый бросок: " + dice1);
-console.log("Второй бросок: " + dice1);
-
+console.log('Первый бросок: ' + dice1);
+console.log('Второй бросок: ' + dice2);
 if (isWinningDouble) {
-  if (dice1 === dice2) {
-    if (dice1 > 3 && dice2 > 3) {
-      console.log("Выигрышный дубль!");
-    }
-  }
+  console.log('Выигрышный дубль!');
 } else {
-  isWinningDouble = false;
-  console.log("Не выигрышный дубль!");
+  console.log('Не выигрышный дубль.');
 }
-
-/*
-console.log('Первый бросок: ' + dice1)
-console.log('Второй бросок: ' + dice2)
-if (isWinningDouble) {
-  console.log('Выигрышный дубль!')
-} else {
-  console.log('Не выигрышный дубль.')
-}
-*/
