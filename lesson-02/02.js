@@ -16,10 +16,10 @@ console.log('Второй бросок: ' + dice1)
 
 if (dice1 === dice2) {
   if (dice1 > 3 && dice2 > 3) {
-    alert("Выигрышный дубль!");
+    console.log("Выигрышный дубль!");
   }
 } else {
-  alert("Не выигрышный дубль!");
+  console.log("Не выигрышный дубль!");
 }
 
 /*
