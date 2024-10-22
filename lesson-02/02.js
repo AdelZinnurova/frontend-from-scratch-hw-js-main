@@ -9,7 +9,7 @@
 
 let dice1 = (Math.floor(Math.random() * 6) + 1); //от 1 до 6
 let dice2 = (Math.floor(Math.random() * 6) + 1); //от 1 до 6
-let isWinningDouble = true;
+let isWinningDouble = false;
 
 console.log('Первый бросок: ' + dice1)
 console.log('Второй бросок: ' + dice1)
