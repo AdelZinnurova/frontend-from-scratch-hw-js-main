@@ -16,10 +16,11 @@
 */
 
 function findUniqueElements(array) {
-  let result = [];
+  let uniqueElements = [];
   for (let index = 0; index < array.length; index++) {
     if (!result.includes(str)) {
       result.push(str);
     }
   }
+  return uniqueElements
 }
