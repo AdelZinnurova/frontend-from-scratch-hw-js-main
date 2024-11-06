@@ -24,5 +24,3 @@ function findUniqueElements(array) {
     }
     return uniqueElements;
   }
-  
-  
