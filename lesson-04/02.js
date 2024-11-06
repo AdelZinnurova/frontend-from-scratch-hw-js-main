@@ -18,8 +18,8 @@
 function findUniqueElements(array) {
   let result = [];
   for (let index = 0; index < array.length; index++) {
-    if (!result.includes(i)) {
-      result.push(i);
+    if (!result.includes(str)) {
+      result.push(str);
     }
   }
 }
