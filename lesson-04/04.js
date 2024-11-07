@@ -19,5 +19,5 @@ function doubleEachCharacter(str) {
     let doubled = char + char;
     doubledChar.push(doubled)
   }
-  return doubledChar;
+  return doubledChar.join('');
 }
