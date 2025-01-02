@@ -29,15 +29,35 @@ const startButton = document.getElementById('start')
 const cancelButton = document.getElementById('cancel')
 const countdownDisplay = document.getElementById('countdown')
 
-let isTimerStarted = false
-let timerId
+let isTimerStarted = false // Флаг для проверки состояния таймера
+let timerId = null // Идентификатор интервала
 
 startButton.addEventListener('click', () => {
-  let counter = 3
+    if (isTimerStarted) return; // Предотвращаем запуск нескольких таймеров
+    isTimerStarted = true; // Таймер запущен
+    let counter = 3 // Начальное значение
 
-  // your code
+    function start() {
+        countdownDisplay.textContent = counter // обновляем текст на таймер
+        counter-- // уменьшаем оставшееся время
+
+        if (counter < 0) {
+            clearInterval(timerId); // Останавливаем таймер
+            countdownDisplay.textContent = "🚀"
+            isTimerStarted = false; // Разрешаем повторный запуск
+        }
+    }
+
+// Запускаем обновление каждую секунду
+    timerId = setInterval(start, 1000);
+    start(); // Показываем сразу "3", не дожидаясь 1 секунды
 })
 
+
 cancelButton.addEventListener('click', () => {
-  // your code
+    if (isTimerStarted) {
+        clearInterval(timerId) // останавливаем таймер
+        isTimerStarted = false; // Разрешаем повторный запуск
+        countdownDisplay.textContent = "Отменено" // Показываем сообщение
+    }
 })
