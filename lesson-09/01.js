@@ -26,7 +26,7 @@ console.log(oddNumbers) // Должен вывести: [1, 3, 5]
 const array = [1, 2, 3, 4, 5, 6, 7, 8];
 
 const newArray = filter(array, (element, index) => {
-    return index <= 5 && element % 2 !== 0;
+    return element % 2 !== 0;
 });
 
 
